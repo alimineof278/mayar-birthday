@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#1a0f2e">
-<title>عيد ميلاد سعيد يا ميار 🎂</title>
+<title>عيد ميلاد سعيد يا ميار</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -134,7 +134,7 @@
     <div class="box"></div>
     <div class="lid"><div class="bow"><span></span><span></span><i></i></div></div>
   </div>
-  <div class="hint">ميار، عدج هدية 🎁<small>دوسي عليها وشوفي شبيها</small></div>
+  <div class="hint">ميار، عدج هدية<small>دوسي عليها وشوفي شبيها</small></div>
 </section>
 
 <!-- Stage 2: cake -->
@@ -188,26 +188,28 @@
       </g>
     </svg>
   </div>
-  <div class="hint">تمنّي أمنية بقلبج ✨<small>وبعدين دوسي عالشموع حتى تطفينها 🕯️</small></div>
+  <div class="hint">تمنّي أمنية بقلبج<small>وبعدين دوسي عالشموع حتى تطفينها</small></div>
   <div class="counter" id="counter"></div>
 </section>
 
 <!-- Stage 3: card -->
 <section class="stage hidden" id="s3">
   <div class="card">
-    <div class="top">🦋✨🦋</div>
-    <h1>عيد ميلاد سعيد</h1>
+        <h1>عيد ميلاد سعيد</h1>
     <div class="name">ميار</div>
     <div class="divider"></div>
     <div class="msg" id="msg">
-      <p>اليوم مو يوم عادي… اليوم الدنيا تحتفل لأن بيوم مثله انولدت وحدة مثلج 💗</p>
-      <p>عساج دوم ضحكتج هيج حلوة، وكل سنة تكبرين بس بالعمر… أما الجنون والخبال خليه مثل ما هو، لا تغيرين شي 😂</p>
-      <p>الله يحفظج ويوفقج ويحققلج كل شي براسج، وتظلين نجمة تلمع وما تنطفي ⭐</p>
-      <p>وترى الكيكة اللي طفيتيها مو حقيقية، لا تتحمسين 😄 الحقيقية عليج!</p>
-      <p class="big">كل عام وانتِ بألف خير يا أحلى صديقة 🎂</p>
+      <p>هيلوو ميار</p>
+      <p>كل سنة وانتِ طيبة، وعساها سنة حلوة عليج من أولها لآخرها.</p>
+      <p>ما ادري شكتبلج بالضبط، بس حبيت أسويلج شي بسيط بيومج، بدل ما أدزلج هابي بيرثدي وبس مثل كل الناس.</p>
+      <p>الله يوفقج بكل شي تسوينه، ويبعد عنج كل شي يضوجج.</p>
+      <p>صحيح ما صار النة فترة من صرنة نسولف هواي بس المهم قررت اسوي هلشيء ، قليل نوعا ما لكن افضل من ولا شيء</p>
+      <p>وادري الكيكة اللي طفيتيها مو حقيقية، بس الحقيقية عليج هالمرة.</p>
+      <p>ضلّي مثل ما انتِ، لا تتغيرين.</p>
+      <p class="big">كل عام وانت بخير ميمو🫶🏻</p>
     </div>
-    <div class="sign" id="sign">من صديقج<b>Skyro</b></div>
-    <button class="again" id="again">🎁 عيديها مرة ثانية</button>
+    <div class="sign" id="sign"><b>SKYRO</b></div>
+    <button class="again" id="again">عيديها مرة ثانية</button>
   </div>
 </section>
 
@@ -296,7 +298,7 @@
   function blow(c){
     if(!c||c.classList.contains('out')||done)return;
     c.classList.add('out');puff();left--;
-    counter.textContent=left?`باقي ${left} 🕯️`:'';
+    counter.textContent=left?`باقي ${left}`:'';
     if(left===0){done=true;finish();}
   }
   candles.forEach(c=>c.addEventListener('click',e=>{e.stopPropagation();audio();blow(c);}));
